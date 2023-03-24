@@ -21,7 +21,7 @@ function history_f() {
   document.querySelector("#scissors").disabled = true;
   start_again.style.display = "flex";
 
-  history.push({ userScore: userScore, awayScore: awayScore });
+  history.unshift({ userScore: userScore, awayScore: awayScore });
 
   let historyList = document.querySelector("#historyList");
   historyList.innerHTML = "";

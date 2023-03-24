@@ -1,11 +1,14 @@
 html,
 body {
   font-family: "Lilita One", cursive !important;
+}
+
+main {
   background-image: url(./game-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 100vh;
 }
 
 .modal-content {
@@ -77,10 +80,6 @@ body {
     margin-left: 0rem !important;
     justify-content: center;
   }
-
-  #start_again {
-    top: 66%;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -89,7 +88,7 @@ body {
   }
 
   .sm-title {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   #start_again {
@@ -97,11 +96,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
-  #start_again {
-    top: 75%;
-  }
-
+@media (max-width: 425.98px) {
   .img-game {
     margin-top: 0rem !important;
     padding: 0rem 0rem 1rem 0rem !important;
@@ -117,5 +112,11 @@ body {
 
   .img-display {
     height: 6rem;
+  }
+}
+
+@media (max-width: 370.98px) {
+  .sm-title {
+    font-size: 1.8rem;
   }
 }
